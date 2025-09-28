@@ -46,6 +46,11 @@ function doneTasks(todo, newLi) {
     newLi.classList.add("done");
   }
 
+  else{
+    todo.completed = false;
+    newLi.classList.remove("done");
+  }
+
   let completedNum = 0;
 
   //if index i in the list is clicked, add 1 to completedNum
